@@ -2,13 +2,18 @@
 const mongoose = require("mongoose"); 
 const Schema = mongoose.Schema; 
 
-/* -- Building the new Schema -- */
-const Schema; 
 
+/* -- Building the new Schema -- */
+const schemaTemplate = new Schema({
+
+
+    }
+  );
 
 
 
 
 
 /* -- exporting -- */
-//module.export = router;
+const transaction = mongoose.model();
+//module.export = router; // will be referenced by api.js
