@@ -30,9 +30,6 @@ const schemaTemplate = new Schema({
     });
 
 
-
-
-
 /* -- exporting -- */
-const transaction = mongoose.model();
-//module.export = router; // will be referenced by api.js
+const transaction = mongoose.model("Transaction", schemaTemplate);
+module.exports = transaction; // will be referenced by api.js
