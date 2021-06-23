@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 
 const app = express(); 
 
+require("dotenv").config(); // references the .env file
 
 /* -- utilizing the app -- */
 app.use(logger("dev"));
