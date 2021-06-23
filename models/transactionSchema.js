@@ -1,7 +1,6 @@
 /* -- Requiring variables -- */
-const express = require("express"); 
-const router = express.Router(); 
-
+const mongoose = require("mongoose"); 
+const Schema = mongoose.Schema; 
 
 /* -- Building the new Schema -- */
 const Schema; 
@@ -12,4 +11,4 @@ const Schema;
 
 
 /* -- exporting -- */
-module.export = router;
+//module.export = router;
