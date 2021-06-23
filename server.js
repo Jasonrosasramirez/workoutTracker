@@ -1,13 +1,18 @@
 /* -- Basic imports -- */
 const express = require("express"); 
-const router = express.Router(); 
 const mongoose = require("mongoose");
 
 const app = express(); 
 
 
 /* -- utilizing the app -- */
+app.use(logger("dev"));
 
+app.use(compression());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.use(express.static("public"));
 
 
 /* -- connection with mongo atlas -- */
